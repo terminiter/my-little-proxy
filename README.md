@@ -9,11 +9,8 @@ proxy.js
 ```js
 var myLittleProxy = require('./lib/my-little-proxy');
 
-// My Little Proxy logs with a custom implementation of mikeal/logref
-if (!process.logging) {
-  process.logging = myLittleProxy.logref;
-  myLittleProxy.setupLogger();
-}
+// Turn on cli logger (powered by logref)
+myLittleProxy.cli();
 
 // Mirrors the basic http-proxy api but with `this` scoped to a collection
 // of helpful little things

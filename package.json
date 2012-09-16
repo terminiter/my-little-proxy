@@ -7,7 +7,7 @@
     "http-proxy": "~0.8.2"
   },
   "scripts": {
-    "prepublish": "./bin/png2ansi",
+    "prepublish": "./bin/prepublish.sh",
     "start": "node ./proxy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

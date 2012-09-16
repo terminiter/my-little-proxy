@@ -27,19 +27,7 @@ myLittleProxy(function (req, res, proxy) {
 
 ### output:
 
-```
-$ npm start
-
-> my-little-proxy@0.0.0 start /home/josh/dev/my-little-proxy
-> node ./proxy.js
-
-♥ mlp♥  MY LITTLE PROXY
-♥ mlp♥  a cute little http proxy server
-♥ mlp♥  programmed entirely in @jesusabdullah's bedroom
-♥ mlp♥  version 0.0.0, 2012
-♥ mlp♥  (0) -> [GET] localhost:8000/couchdb
-♥ mlp♥  (0) <- [GET] localhost:5984/
-```
+![](https://raw.github.com/jesusabdullah/my-little-proxy/master/img/screenie.png)
 
 ## License:
 

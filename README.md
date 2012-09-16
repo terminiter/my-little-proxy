@@ -1,5 +1,7 @@
 # My Little Proxy
 
+![](https://raw.github.com/jesusabdullah/my-little-proxy/master/img/mlp.web.png)
+
 ## Example:
 
 proxy.js

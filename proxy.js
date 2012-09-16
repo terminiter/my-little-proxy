@@ -7,7 +7,7 @@ if (!process.logging) {
 }
 
 myLittleProxy(function (req, res, proxy) {
-  if (this.rewrite('/repository', '/_utils')) {
+  if (this.rewrite('/couchdb', '/')) {
     return this.forward('localhost', 5984);
   }
   this.end();

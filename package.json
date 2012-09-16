@@ -1,0 +1,19 @@
+{
+  "name": "my-little-proxy",
+  "version": "0.0.0",
+  "description": "a cute little http proxy server",
+  "main": "./lib/my-little-proxy.js",
+  "dependencies": {
+    "http-proxy": "~0.8.2"
+  },
+  "scripts": {
+    "start": "node ./proxy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "proxy"
+  ],
+  "author": "Joshua Holbrook",
+  "license": "MIT/X11"
+}

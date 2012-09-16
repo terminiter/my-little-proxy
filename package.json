@@ -6,6 +6,9 @@
   "dependencies": {
     "http-proxy": "~0.8.2"
   },
+  "devDependencies": {
+    "picture-tube": "*"
+  },
   "scripts": {
     "prepublish": "./bin/prepublish.sh",
     "start": "node ./proxy.js",

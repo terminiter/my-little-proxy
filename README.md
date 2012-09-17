@@ -26,6 +26,28 @@ myLittleProxy(function (req, res, proxy) {
 
 ![](https://raw.github.com/jesusabdullah/my-little-proxy/master/img/screenie.png)
 
+## Things MLP Currently Supports:
+
+### this.rewrite(from, to)
+
+Rewrite paths from one root to another (similar to how couch does it). Returns true if the rewrite matches/applies.
+
+### this.forward(host, port)
+
+A thin wrapper around proxyRequest. Only takes host/port args as positionals,
+and logs the event.
+
+### this.withResponseBody(function(buffer, write))
+
+A shim for res.write which allows for modifying the write on its way out.
+`write` is a callback with signature `function(buffer)`.
+
+### this.withResponseHeader(function (code, headers, writeHead) {
+
+A shim for res.writeHead which allows for modifying the response code and
+headers. `writeHead` is a callback with signature
+`function (code, [humanReason], headers)`.
+
 ## License:
 
 MIT/X11.

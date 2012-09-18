@@ -4,7 +4,8 @@
   "description": "a cute little http proxy server",
   "main": "./lib/my-little-proxy.js",
   "dependencies": {
-    "http-proxy": "~0.8.2"
+    "http-proxy": "~0.8.2",
+    "zippy": "0.0.3"
   },
   "devDependencies": {
     "picture-tube": "*",

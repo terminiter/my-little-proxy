@@ -28,9 +28,15 @@ myLittleProxy(function (req, res, proxy) {
 
 ## Things MLP Currently Supports:
 
+### this.host(hostMatch, [port])
+
+Pattern match against the Host header (ex: '*.jesusabdullah.net') with an
+optional port argument (to match against the Host header's port).
+
 ### this.rewrite(from, to)
 
-Rewrite paths from one root to another (similar to how couch does it). Returns true if the rewrite matches/applies.
+Rewrite paths from one root to another (similar to how couch does it). Returns
+true if the rewrite matches/applies.
 
 ### this.forward(host, port)
 
@@ -47,6 +53,10 @@ A shim for res.write which allows for modifying the write on its way out.
 A shim for res.writeHead which allows for modifying the response code and
 headers. `writeHead` is a callback with signature
 `function (code, [humanReason], headers)`.
+
+### this.notFound()
+
+End the request with a generic (JSON-parseable, human-readable) 404.
 
 ## License:
 

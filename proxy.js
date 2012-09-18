@@ -18,5 +18,5 @@ myLittleProxy(function (req, res, proxy) {
     return this.forward('localhost', 5984);
   }
 
-  this.end();
+  this.notFound();
 }).listen(9090);
